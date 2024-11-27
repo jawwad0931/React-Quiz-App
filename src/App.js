@@ -141,6 +141,9 @@ function App() {
     <>
       {isFinished ? (
         <div>
+          <div style={{display:"flex",justifyContent:"center"}}>
+          <img src="/images/quizimage.png" height={"150px"} width={"150px"}/>
+          </div>
           <h1>Quiz Finished</h1>
           <h2>Score: {score} Out of 4</h2>
           <button onClick={restartQuiz}>Restart Quiz</button>
