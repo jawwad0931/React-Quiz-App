@@ -1,0 +1,110 @@
+/* General styles for the entire app */
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #00c6ff, #6610f2); 
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#h2{
+  color: #fff;
+}
+
+.app-container {
+  width: 100%;
+  max-width: 600px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+h1, h2 {
+  color: #333;
+  text-align: center;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Styling the buttons */
+button {
+  background: linear-gradient(135deg, #00c6ff, #0072ff);
+  color: white;
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  width: 100%;
+  margin: 10px 0;
+}
+
+button:hover {
+  background-color: #005fa3;
+  transform: translateY(-3px);
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Question container */
+.question-container {
+  text-align: center;
+}
+
+.options-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Score and Restart section */
+.score-container {
+  text-align: center;
+}
+
+.restart-btn {
+  background-color: #28a745;
+}
+
+.restart-btn:hover {
+  background-color: #218838;
+}
+
+/* Styling for the finished quiz state */
+.finished-quiz {
+  text-align: center;
+}
+
+.finished-quiz h1 {
+  font-size: 32px;
+  color: #333;
+}
+
+.finished-quiz h2 {
+  font-size: 24px;
+  color: #555;
+}
+
+.finished-quiz button {
+  background-color: #007bff;
+  border-radius: 30px;
+  font-size: 18px;
+  width: auto;
+  padding: 12px 30px;
+  transition: background-color 0.3s;
+}
+
+.finished-quiz button:hover {
+  background-color: #0056b3;
+}
