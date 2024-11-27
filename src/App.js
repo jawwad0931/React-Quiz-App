@@ -147,6 +147,9 @@ function App() {
         </div>
       ) : (
         <div>
+          <div style={{display:"flex",justifyContent:"center"}}>
+          <img src="/images/quizimage.png" height={"150px"} width={"150px"}/>
+          </div>
           <h2 id="h2">{questions[currentQuestion].question}</h2>
           {questions[currentQuestion].options.map((option, index) => (
             <button key={index} onClick={() => handleOptionClick(option)}>
